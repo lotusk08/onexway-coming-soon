@@ -8,15 +8,15 @@ import Faq from "@/components/Faq";
 export default async function Index() {
   return (
     <>
-      <button className="right-3 top-3 fixed cursor-pointer m-5/2 p-3 border-none rounded-full z-30 bg-black mb-5">
-        <a href="https://github.com/Lokmaneelhakim" target="_blank">
+      <button className="right-3 top-3 fixed cursor-pointer m-5/2 p-3 border-none">
+        <a href="https://stevehoang.com" target="_blank">
           <svg
-            viewBox="0 0 16 16"
+            viewBox="0 0 24 24"
             className="w-5 h-5"
             fill="currentColor"
             aria-hidden="true"
           >
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"></path>
           </svg>
         </a>
       </button>
@@ -36,7 +36,7 @@ export default async function Index() {
             }}
             transition={{ duration: 1.2 }}
           >
-            Empowering students
+            Empowering SME
             <br />
             Unlocking potentials
           </motion.h1>
@@ -54,7 +54,7 @@ export default async function Index() {
             }}
             transition={{ duration: 1.2 }}
           >
-            Be the first to experience the future!
+            Be the first to enter the one-stop logistics future!
           </motion.p>
           <motion.div
             className="mt-8 flex sm:flex-row flex-col items-center justify-center gap-4 mb-5 "
@@ -72,20 +72,12 @@ export default async function Index() {
           >
             <TransitionLink
               color="inverted"
-              href="/presentation"
-              cn="block w-full rounded py-4 mr-2 text-sm font-medium text-white shadow focus:outline-none focus:ring max-w-40"
-              label="Take the tour"
-              svg={{ component: <GoBook className="ml-4 mr-0" /> }}
-            />
-            <TransitionLink
               cn="block w-full rounded px-12 py-4 text-sm font-medium shadow focus:outline-none  active:text-grey-500 max-w-40"
               label="Join the Waitlist"
               href="/contact_us"
               svg={{ component: <GoArrowRight className="ml-2" /> }}
             />
           </motion.div>
-
-          <Faq />
         </div>
       </div>
     </>

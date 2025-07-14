@@ -16,9 +16,9 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Coming Soon Page",
+  title: "Onexway is coming",
   description:
-    "We can't wait to share the exciting launch of our website with you! 🚀 Stay tuned for the event. Subscribe now to be the first to know when we go live! 🌐✨",
+    "We can't wait to share the exciting launch of our first step with you! 🚀 Stay tuned for the event. Subscribe now to be the first to know when we go live! 🌐✨",
 };
 
 export default function RootLayout({
@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" className={`${syne.className} ${inter.className}`}>
       <link
         rel="icon"
-        href="/svg/logo-grey.svg"
+        href="/svg/onexway-logo.svg"
         type="image/<generated>"
         sizes="<generated>"
       />

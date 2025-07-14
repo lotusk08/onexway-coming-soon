@@ -26,9 +26,9 @@ const ContactUs = () => {
     /* you'll need the secret key to send emails (contact me for access)
      you can get your own version of it  by signing up at https://www.emailjs.com/
     */
-    emailjs.init("BC8sGNr9RmNvoZTJW");
+    emailjs.init("NRzSlcTu4bS-5pgcm");
     emailjs
-      .send("service_l7fduua", "template_wdfz5vk", data)
+      .send("onexwayes_dpsdpry", "template_k76t4oh", data)
       .then(function (response) {
         if (response.status == 200) {
           toast.success("Thanks for joining our waitlist!", {
@@ -43,7 +43,7 @@ const ContactUs = () => {
       <div className="left-1.5 top-3.5 fixed cursor-pointer m-5/2 p-0 border-none rounded-full z-30">
         <Link
           href="/"
-          className="left-3 top-3 fixed cursor-pointer m-5/2 p-3 border-none rounded-full z-30 bg-black"
+          className="left-3 top-3 fixed cursor-pointer m-5/2 p-3 border-none rounded-full z-30"
         >
           <GoArrowLeft />
         </Link>
@@ -58,14 +58,14 @@ const ContactUs = () => {
               className="block uppercase tracking-wide text-xs font-bold mb-2"
               htmlFor="name"
             >
-              firstName
+              Name
             </label>
             <input
               required
               className="appearance-none block w-full bg-gray-200 border text-gray-700 border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="name"
               type="text"
-              placeholder="Lokmane Elhakim"
+              placeholder="yourname"
               {...register("firstName")}
             />
             <p className="text-xs italic"></p>
@@ -77,14 +77,14 @@ const ContactUs = () => {
               className="block uppercase tracking-wide text-xs font-bold mb-2"
               htmlFor="email"
             >
-              Email address
+              Email
             </label>
             <input
               required
               className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
               id="email"
               type="email"
-              placeholder="lokmaneelhakim@gmail.com"
+              placeholder="hello@onexway.io"
               {...register("email")}
             />
           </div>
@@ -95,12 +95,12 @@ const ContactUs = () => {
               className="block uppercase tracking-wide text-xs font-bold mb-2"
               htmlFor="message"
             >
-              Message / feedback (optional)
+              Message (optional)
             </label>
             <textarea
-              className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+              className="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none"
               id="message"
-              placeholder="Hi, I am reaching out as a potential customer of your platform. I recently learned about your SaaS offerings and am incredibly excited about the possibilities they hold."
+              placeholder="Leave a comment..."
               {...register("message")}
             ></textarea>
           </div>
